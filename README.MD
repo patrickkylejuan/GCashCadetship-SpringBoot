@@ -29,7 +29,7 @@ If the request goes through successfully, a response containing the system gener
 
 ~~~json
 {
-    "id": "146273e2-12d3-46f9-8a8a-d3e850b6d867" #system generated ID
+    "id": "146273e2-12d3-46f9-8a8a-d3e850b6d867" //system generated ID
 }
 ~~~
 
@@ -122,7 +122,7 @@ If the ID does not exist in the system or is left blank, a corresponding error m
 
 ```JSON
 {
-    "idInput": "e05b1ee9-2ec4-4d6c-90fc-1ea7d30a0aff" #this ID is in the system
+    "idInput": "e05b1ee9-2ec4-4d6c-90fc-1ea7d30a0aff" //this ID is in the system
 }
 
 ```
@@ -137,7 +137,7 @@ If the ID does not exist in the system or is left blank, a corresponding error m
     "datePublished": "2020-01-01",
     "author": "Patrick Juan"
     
-    #the corresponding blog details of the id is displayed
+    //the corresponding blog details of the id is displayed
 }
 ~~~
 
@@ -147,7 +147,7 @@ If the ID does not exist in the system or is left blank, a corresponding error m
 
 ```JSON
 {
-    "idInput": "2ad0d0de-bb77-4801-bc8a-169fa818f533" #this ID is not in the system 
+    "idInput": "2ad0d0de-bb77-4801-bc8a-169fa818f533" //this ID is not in the system 
 }
 
 ```
@@ -157,7 +157,7 @@ If the ID does not exist in the system or is left blank, a corresponding error m
 ~~~json
   {
     "message": "Invalid request: Blog not found on :: 2ad0d0de-bb77-4801-bc8a-169fa818f533" 
-      #an error message saying that the ID is not in the system is displayed
+      //an error message saying that the ID is not in the system is displayed
 }
 
 ~~~
@@ -202,7 +202,7 @@ If the ID does not exist in the system or either or both of the request fields a
 
 ```JSON
 {
-    "idInput": "e0asdsd1ee9-2ec4-4-90fc-1ea7d30a", ##this id is not in the system therefore we are expecting an error
+    "idInput": "e0asdsd1ee9-2ec4-4-90fc-1ea7d30a", //this id is not in the system therefore we are expecting an error
     "contentInput": "This is my updated blog"
 }
 
@@ -212,7 +212,7 @@ If the ID does not exist in the system or either or both of the request fields a
 
 ~~~json
 {
-    "message": "Invalid request: Blog not found on :: e05b1ee9-2ec4-4d6c-90fc-1ea7d30a" #an error message is displayed!
+    "message": "Invalid request: Blog not found on :: e05b1ee9-2ec4-4d6c-90fc-1ea7d30a" //an error message is displayed!
 }
 
 ~~~
@@ -234,14 +234,14 @@ If the ID does not exist in the system or the idInput is left blank, a correspon
 
 ```JSON
 {
-    "idInput": "e05b1ee9-2ec4-4d6c-90fc-1ea7d30a0aff" #this ID is in the system
+    "idInput": "e05b1ee9-2ec4-4d6c-90fc-1ea7d30a0aff" //this ID is in the system
 }
 ```
 
 **Response**:
 
 ~~~json
-Blog post with ID: e05b1ee9-2ec4-4d6c-90fc-1ea7d30a0affsuccessfully deleted! #the response is a string confirming the deletion
+Blog post with ID: e05b1ee9-2ec4-4d6c-90fc-1ea7d30a0affsuccessfully deleted! //the response is a string confirming the deletion
 ~~~
 
 <h3> Failed request and response example </h3>
@@ -250,7 +250,7 @@ Blog post with ID: e05b1ee9-2ec4-4d6c-90fc-1ea7d30a0affsuccessfully deleted! #th
 
 ```JSON
 {
-    "idInput": "456456-bb77-4801-bc8a-23gsd67" #this is not an ID in the system
+    "idInput": "456456-bb77-4801-bc8a-23gsd67" //this is not an ID in the system
 }
 
 ```
@@ -259,7 +259,7 @@ Blog post with ID: e05b1ee9-2ec4-4d6c-90fc-1ea7d30a0affsuccessfully deleted! #th
 
 ~~~json
 {
-    "message": "Invalid request: Blog not found on :: 456456-bb77-4801-bc8a-23gsd67" #an error msg is displayed in the response
+    "message": "Invalid request: Blog not found on :: 456456-bb77-4801-bc8a-23gsd67" //an error msg is displayed in the response
 }
 
 ~~~
